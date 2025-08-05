@@ -95,14 +95,14 @@
 
 
 <build>
-  <finalName>back1</finalName> <!-- 👈 This is the fix -->
-  <plugins>
-    <plugin>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-maven-plugin</artifactId>
-    </plugin>
-  </plugins>
-</build>
+    <plugins>
+      <!-- Maven Plugin for WAR packaging -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 
 </project>
